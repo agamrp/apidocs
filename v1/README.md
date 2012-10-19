@@ -52,7 +52,7 @@ Loads
           "os_version": "4.0"
         }}`
       * Clients responsible for generating globally-unique device_id (use a guid). Clients should attempt to reuse these IDs across all applications installed on the same device, if possible. 
-    * Returns: HTTP 201 on success, HTTP 400 on error. Return will echo back original JSON message, with "device\_id" specified, if one wasn't present with the POST. 
+    * Returns: HTTP 201 on success, HTTP 400 on error. 
     * Side effects: Writes an app load event into persistent storage.
 
 Crashes
