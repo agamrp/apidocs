@@ -51,7 +51,7 @@ Loads
           "os_name": "Windows Phone",
           "os_version": "4.0"
         }}`
-      * Set "device_id" to '' if no device ID assigned (see "returns", below)
+      * Clients responsible for generating globally-unique device_id (use a guid). Clients should attempt to reuse these IDs across all applications installed on the same device, if possible. 
     * Returns: HTTP 201 on success, HTTP 400 on error. Return will echo back original JSON message, with "device\_id" specified, if one wasn't present with the POST. 
     * Side effects: Writes an app load event into persistent storage.
 
