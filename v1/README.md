@@ -27,6 +27,22 @@ Design Principles
 * API should use Rails/C-style underscored names ("app_id", "application", "my_long_variable_name") rather than camelCasedJavascriptVariableNames or PythonPascalCasedNames
 * We'll need some kind of throttling/rate-limiting; get this right later.
 
+Data Types
+==========
+The API uses the following data types:
+
+Platform
+--------
+Platform represents a combination of operating system and physical hardware that runs an application instrumented with Crittercism. Platform has the following keys:
+
+  * "os_name", a string representing the name of the operating system, one of
+    * "wp" for Windows Phone
+    * "android" for Android Java
+    * "android-ndk" for Android Native Development Kit runtime
+    * "ios"
+    * "html5"
+  * "os_version" is a numerical version identifier for the operating system, with type string, e.g. "8.0"
+
 Endpoints
 =========
 All endpoints accessible via SSL-encrypted HTTP at **api.crittercism.com** (port 443). All endpoints use URL-identified resources; POST and PUT requests use JSON-encoded entity bodies with the HTTP headers set to specify "application/json" MIME types. Clients should implement full Unicode handling, with support for common encoding types including UTF-8 and UTF-16.
