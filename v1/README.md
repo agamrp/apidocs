@@ -47,7 +47,7 @@ Loads
 	"platform": {
           "client": "wp8v1.0",
           "device_id": "34324-fdece-34tesf-343ce",
-          "model": "Nokia Lumia 800",
+          "device_model": "Nokia Lumia 800",
           "os_name": "Windows Phone",
           "os_version": "4.0"
         }}`
@@ -85,7 +85,7 @@ Crashes
     "platform": {
       "client": "iosv1.0",
       "device_id": "34324-fdece-34tesf-343ce",
-      "model": "iPhone 3GS",
+      "device_model": "iPhone 3GS",
       "os_name": "iOS",
       "os_version": "4.5"
     }}`
@@ -113,7 +113,7 @@ Errors (Handled Exceptions)
       "platform": {
         "client": "iosv1.0",
         "device_id": "34324-fdece-34tesf-343ce",
-        "model": "iPhone 3GS",
+        "device_model": "iPhone 3GS",
         "os_name": "iOS",
         "os_version": "4.5"
       }}`
