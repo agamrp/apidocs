@@ -43,6 +43,14 @@ Platform represents a combination of operating system and physical hardware that
     * "html5"
   * "os_version" is a numerical version identifier for the operating system, with type string, e.g. "8.0"
 
+Stack Traces
+------------
+For Windows, the "stack_trace" field should be an array with one line of the trace per line of the array. Example:
+
+`"stack_trace": [ "at CrittercismWP8TestApplication.MainPage.Button_Click_1(Object sender, RoutedEventArgs e)", " at System.Windows.Controls.Primitives.ButtonBase.OnClick()", ... ]`
+
+Stack traces for other platforms TBD
+
 Endpoints
 =========
 All endpoints accessible via SSL-encrypted HTTP at **api.crittercism.com** (port 443). All endpoints use URL-identified resources; POST and PUT requests use JSON-encoded entity bodies with the HTTP headers set to specify "application/json" MIME types. Clients should implement full Unicode handling, with support for common encoding types including UTF-8 and UTF-16.
@@ -96,7 +104,7 @@ Crashes
     "crash": {
       "name": "System.NullArgumentException",
       "reason": "The runtime tried to dereference a null pointer",
-      "stack_trace": "platform dependent stacktrace"
+      "stack_trace": "platform dependent stacktrace (see "stack trace" section)"
     },
     "platform": {
       "client": "iosv1.0",
