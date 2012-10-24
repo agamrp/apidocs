@@ -104,7 +104,7 @@ Crashes
     "crash": {
       "name": "System.NullArgumentException",
       "reason": "The runtime tried to dereference a null pointer",
-      "stack_trace": "platform dependent stacktrace (see "stack trace" section)"
+      "stack_trace": "platform dependent stacktrace (see data types section above)"
     },
     "platform": {
       "client": "iosv1.0",
@@ -132,7 +132,7 @@ Errors (Handled Exceptions)
       "error": {
         "name": "Application.ReallyHideousError",
         "reason": "The user smashed the device in two",
-        "stack_trace": "platform dependent stacktrace"
+        "stack_trace": "platform dependent stacktrace (see data types section above)"
       },
       "platform": {
         "client": "iosv1.0",
