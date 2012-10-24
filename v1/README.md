@@ -64,7 +64,7 @@ Loads
           "client": "wp8v1.0",
           "device_id": "34324-fdece-34tesf-343ce",
           "device_model": "Nokia Lumia 800",
-          "os_name": "Windows Phone",
+          "os_name": "wp",
           "os_version": "4.0"
         }}`
       * Clients responsible for generating globally-unique device_id (use a guid). Clients should attempt to reuse these IDs across all applications installed on the same device, if possible. 
@@ -102,7 +102,7 @@ Crashes
       "client": "iosv1.0",
       "device_id": "34324-fdece-34tesf-343ce",
       "device_model": "iPhone 3GS",
-      "os_name": "iOS",
+      "os_name": "ios",
       "os_version": "4.5"
     }}`
     * Returns: HTTP 201 with created object on success, HTTP 400 on error
@@ -129,8 +129,8 @@ Errors (Handled Exceptions)
       "platform": {
         "client": "iosv1.0",
         "device_id": "34324-fdece-34tesf-343ce",
-        "device_model": "iPhone 3GS",
-        "os_name": "iOS",
+        "device_model": "Samsumg Galaxy SIII",
+        "os_name": "android",
         "os_version": "4.5"
       }}`
     * Returns: HTTP 201 with created object on success, HTTP 400 on error
